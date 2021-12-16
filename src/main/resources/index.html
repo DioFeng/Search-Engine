@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="utilities.css" >
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Search Engine</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar ">
+        <div class="container flex">
+            <h1 class="logo">SearchEngine</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="home.html">Supports</a></li>
+                    <li><a href="shutdown.html">Shutdown</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Welcome to Deezzy</h1>
+                <p>The most powerful search engine in the local host</p>
+                <a href="features.html" class="btn btn-outline">Read More</a>
+            </div>
+
+            <div class="showcase-form card">
+                <h2>Search here</h2>
+                <form method="${method}" action="${action}">
+                    <div class="form-control">
+                        <input type="search" name="query" placeholder="Search...">
+                        <button type="submit" class="btn btn-outline"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+	
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="stats-heading text-center my-1">
+               	Statistics
+            </h2>
+			<div class="container grid">
+				<form method="${method}" action="${action}">
+					<div class="search-result card scroll">
+        				<h1 class="stats-heading text-center my-1">
+            				Search result
+        				</h1>
+       						 ${result}
+    				</div>
+    				<input type="submit" name="exact" class="btn btn-outline" value="Exact Search"></input>
+    				<input type="submit" name="partial" class="btn btn-outline" value="Partial Search"></input>
+				</form>
+				
+				<form method="${method}" action="${action}">
+					<div class="search-result card scroll">
+        				<h1 class="stats-heading text-center my-1">
+            				Search history
+        				</h1>
+       						${history}
+    				</div>
+    				<input type="submit" name="clear" class="btn btn-outline" value="Clear History"></input>
+				</form>
+			</div>
+        </div>
+    </section>
+
+    <!-- Footers -->
+    <footer class="footer bg-light py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>footer</h1>
+                <p>Copyright &copy; 2021</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="home.html">Supports</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="https://github.com/DioFeng/DioFeng.github.io">About Me</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
