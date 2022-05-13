@@ -1,11 +1,10 @@
 Search Engine
 =================================================
 
-- Developed full-stack, multi-threaded, in-memory web crawler and search engine
-- Embedded advanced programming contents: polymorphism and inheritance, multi-threading without
-Java Concurrent library, Jetty and Servlets, web design and database programming(SQL)
-- Experienced with industrial level code review, designing high-quality reusable generalized code, code
-refactoring and debugging
+- Developed a **full-stack, multi-threaded, in-memory web crawler** and **search engine**, accomplished **exact searching** and **partial searching** on keywords
+- Crawled the seed URL using **socket** connections to fetch URLs, to parse and clean HTML4 content and store in **thread-safe inverted index** data structures
+- Implemented multi-thread-safety managed **Workqueue** and **ReadWriteLock** to achieve **3 times faster** operation than the single-thread operation
+- Deployed the search engine on a dynamic web page using **Jetty&Servletsv and embedded custom **CSS** and **HTML** to support searching functionality
 
 
 <img width="1162" alt="Screen Shot 2021-12-14 at 5 36 04 PM" src="https://user-images.githubusercontent.com/55362194/154538405-632f18f6-8aa7-452f-8152-cd058885934b.PNG">
